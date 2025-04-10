@@ -1,0 +1,97 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ajaplaneerimine</title>
+    <script defer src="login-home.js"></script>
+    <style>
+        html{
+            height: 100%;
+        }
+        body{
+            font-family: Courier
+        }
+        .login-container{
+            width: 400px;
+            margin: 50px;
+            background-color: rgba(251, 225, 231, 1);
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.25);
+        }
+        form{
+            display: flex;
+            flex-direction: column;
+        }
+        label{
+            font-family: Candara;
+            font-size: 14px;
+            color: rgba(255, 167, 184, 1);
+            margin-bottom: 5px;
+        }
+        input[type="text"],
+        input[type="email"],
+        input[type="password"]{
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            color: rgba(255, 167, 184, 1);
+            border: 1px solid rgba(255, 167, 184, 1);
+            border-radius: 5px;
+            box-sizing: border-box;
+            font-size: 14px;
+        }
+        input[type="submit"]{
+            width: 100%;
+            padding: 10px;
+            background-color: rgba(255, 167, 184, 1);
+            color: white;
+            border: none;
+            border-radius: 5px;
+            font-family: Candara;
+            font-size: 14px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+        input[type="submit"]:hover{
+            background-color: rgba(255, 202, 215, 1);
+        }
+        input[type="submit"]:active{
+            background-color: rgba(255, 202, 215, 1);
+        }
+    </style>
+</head>
+<body>
+    <h1>Tere tulemast ajaplaneerimise lehele!</h1>
+    <h2>Palun logi sisse et vaadata enda graafikut!</h2>
+    <br>
+
+    <div class="login-container">
+        <form id="login-form">
+            <label for="username">KASUTAJA NIMI</label>
+            <input
+                type="text"
+                name="username"
+                id="username-field"
+                class="login-form-field"
+                placeholder="Tiit">
+            
+            <label for="password">PAROOL</label>
+            <input
+                type="password"
+                name="password"
+                id="password-field"
+                class="login-form-field"
+                placeholder="abc1234">
+            
+            <div id="error-container"></div>
+
+            <input
+                type="submit"
+                value="Login"
+                id="login-form-submit">
+          </form>
+        </form>
+    </div>
+</body>
+</html>

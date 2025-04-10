@@ -1,0 +1,62 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ajaplaneerimine</title>
+    <style>
+        ul{
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background-color: rgba(255, 167, 184, 1);
+        }
+        li{
+            float: left;
+        }
+        li a{
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 20px 25px;
+            text-decoration: none;
+        }
+        li a:hover{
+            background-color: rgba(255, 202, 215, 1);
+        }
+        .esi-widgetid{
+            display: flex;
+            background-color: rgba(251, 225, 231, 1);
+        }
+        .esi-widgetid > div{
+            background-color: white;
+            margin: 10px;
+            padding: 20px;
+            font-size: 14px;
+        }
+    </style>
+</head>
+<body>
+    <ul>
+        <li><a class="active" href="home.html">Kodu</a></li>
+        <li><a href="kava.html">Kavad</a></li>
+        <li><a href="statistika.html">Statistika</a></li>
+        <li><a href="tegevused.html">Tegevuste lisamine</a></li>
+    </ul>
+    <h1>Ajaplaneerimine</h1>
+
+    <div class="esi-widgetid">
+        <div id="kuukalender">
+            <p>Siia ilmub hiljem kalender</p>
+        </div>
+        <div id="tulevased-tegevused">
+            <li>
+                <p>X tegevus</p>
+                <p>W tegevus</p>
+                <p>Z tegevus</p>
+            </li>
+        </div>
+    </div>
+
+</body>
+</html>
